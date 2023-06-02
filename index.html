@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/icons8-calculator.gif"
+      type="image/x-icon"
+    />
+    <!-- Utility Styles CSS link -->
+    <link rel="stylesheet" href="utilities.css" />
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Background Section -->
+    <div id="bg-img1" class="bg-img">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div id="bg-img2" class="bg-img">
+      <i class="fa-solid fa-divide"></i>
+    </div>
+    <div id="bg-img3" class="bg-img">=</div>
+    <div id="bg-img4" class="bg-img">
+      <i class="fa-solid fa-plus"></i>
+    </div>
+    <div id="bg-img5" class="bg-img">
+      <i class="fa-solid fa-minus"></i>
+    </div>
+    <!-- Main Section -->
+    <main class="flex items-center">
+      <div id="container" class="flex f-column items-center mx-auto">
+        <h2>Calculator</h2>
+        <div class="row">
+          <input id="display" type="text" disabled />
+        </div>
+        <div class="row flex">
+          <button class="button bg-yellow">AC</button>
+          <button class="button bg-yellow">DE</button>
+          <button class="button bg-yellow">+/-</button>
+          <button class="button bg-yellow">
+            /
+            <!-- ÷ -->
+          </button>
+        </div>
+        <div class="row flex">
+          <button class="button">1</button>
+          <button class="button">2</button>
+          <button class="button">3</button>
+          <button class="button bg-yellow">x</button>
+        </div>
+        <div class="row flex">
+          <button class="button">4</button>
+          <button class="button">5</button>
+          <button class="button">6</button>
+          <button class="button bg-yellow">-</button>
+        </div>
+        <div class="row flex">
+          <button class="button">7</button>
+          <button class="button">8</button>
+          <button class="button">9</button>
+          <button class="button bg-yellow">+</button>
+        </div>
+        <div class="row flex">
+          <button class="button">00</button>
+          <button class="button">0</button>
+          <button class="button">.</button>
+          <button class="button bg-dark">=</button>
+        </div>
+      </div>
+    </main>
+    <footer class="flex f-column f-center">
+      <div class="icons">
+        <p>
+          Designed & coded by
+          <a href="http://www.linkedin.com/in/nitish31/">Nitish</a>
+        </p>
+      </div>
+      <div class="icons">
+        <a href="http://www.linkedin.com/in/nitish31/">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="http://github.com/nitishkumar31">
+          <i class="fa-brands fa-square-github"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Font Awesome script link -->
+    <script
+      src="https://kit.fontawesome.com/8f9585ba75.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- External JavaScript file link -->
+    <script src="index.js"></script>
+  </body>
+</html>
