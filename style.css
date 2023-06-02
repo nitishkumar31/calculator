@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Monomaniac+One&family=Prompt:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(-120deg, #e2e2e2 -30%, #c9d6ff 50%, #e2e2e2 150%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Background Image Styles */
+.bg-img {
+  position: absolute;
+  font-size: 10rem;
+  background: -webkit-linear-gradient(#edef84, #efbcaf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#bg-img1 {
+  top: 1.5%;
+  left: 10%;
+  rotate: 20deg;
+}
+
+#bg-img2 {
+  top: 5%;
+  left: 56%;
+  rotate: 160deg;
+}
+
+#bg-img3 {
+  top: 38%;
+  left: 49%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16rem;
+  font-weight: 900;
+  rotate: -9deg;
+}
+
+#bg-img4 {
+  top: 60%;
+  left: 34.7%;
+  rotate: 80deg;
+}
+
+#bg-img5 {
+  top: 60%;
+  left: 80%;
+  rotate: 10deg;
+}
+
+main {
+  height: 90vh;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+
+/* Calculator Section */
+#container {
+  background: #0015fe15;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #053e63;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: "Monomaniac One", sans-serif;
+  font-size: 2.5rem;
+  color: black;
+}
+
+.row {
+  flex-wrap: wrap;
+  margin: 8px 0;
+}
+
+/* Display Section */
+#display {
+  background: rgb(242, 250, 250);
+  border: 0;
+  outline: 0;
+  height: 5rem;
+  width: 15.5rem;
+  padding: 0.6rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: x-large;
+}
+
+/* Button Section */
+.button {
+  background: rgb(242, 250, 250);
+  height: 45px;
+  width: 50px;
+  margin: 0 8px;
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: 550;
+  box-shadow: 2px 2px 5px #053e63;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.button:active {
+  background: rgb(1, 67, 67);
+  color: aliceblue;
+  box-shadow: none;
+}
+
+/* Footer Section */
+footer p {
+  font-family: "Josefin Sans", sans-serif;
+  padding: 0.6rem 0;
+}
+
+footer i {
+  padding: 0 0.4rem;
+  color: rgba(1, 41, 112, 0.6);
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 420px) {
+  main {
+    margin: 1rem 1rem !important;
+  }
+}

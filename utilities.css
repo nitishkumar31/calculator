@@ -1,0 +1,39 @@
+.flex {
+  display: flex;
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+.f-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.mx-auto {
+  margin: auto;
+}
+
+.bg-yellow {
+  background: rgb(244, 253, 220) !important;
+}
+
+.bg-yellow:active {
+  background: rgb(71, 84, 36) !important;
+  color: aliceblue;
+}
+
+.bg-dark {
+  background: rgb(84, 69, 36) !important;
+  color: aliceblue;
+}
+
+.bg-dark:active {
+  background: rgb(244, 253, 220) !important;
+  color: black !important;
+}
