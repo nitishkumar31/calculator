@@ -1,6 +1,4 @@
-"use strict";
-
-let screen = document.getElementById("display");
+const screen = document.getElementById("display");
 let buttons = document.querySelectorAll("button");
 let screenValue = "";
 for (let item of buttons) {
@@ -9,6 +7,10 @@ for (let item of buttons) {
     console.log(buttonText);
     if (buttonText == "x") {
       buttonText = "*";
+      screenValue += buttonText;
+      screen.value = screenValue;
+    } else if (buttonText == "÷") {
+      buttonText = "/";
       screenValue += buttonText;
       screen.value = screenValue;
     } else if (buttonText == "AC") {
@@ -28,6 +30,13 @@ for (let item of buttons) {
         screenValue = "-" + screenValue;
         screen.value = screenValue;
       }
+    } else if (buttonText == "%") {
+      // buttonText = "/100*";
+      // screenValue += buttonText;
+      // screen.value = screenValue;
+      let percentage = screenValue / 100;
+      screen.value = eval(percentage);
+      screenValue = percentage + "*";
     } else {
       screenValue += buttonText;
       screen.value = screenValue;
